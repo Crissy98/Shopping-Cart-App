@@ -1,0 +1,19 @@
+<h2>Product Details</h2>
+
+<div *ngIf="product">
+  <h3>{{ product.name }}</h3>
+  <h4>{{ product.price | currency }}</h4>
+  <p>{{ product.description }}</p>
+
+  <button type="button" (click)="addItemToCart(this.product)" >Buy Item </button>
+
+  <button type="button" (click)="backClicked()">Back</button>
+ 
+</div>
+
+
+<!--When skipper is partially delivering the catch on POR, -->
+
+<!-- Landing catch form -  delivering value is not saved when closing the form and go back into it -->
+
+<!--  -->
