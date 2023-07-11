@@ -1,1 +1,15 @@
-<h2>Shopping Cart works</h2>
+<h2>Shopping Cart</h2>
+
+<div *ngFor="let item of items">
+  <h3>
+    <a
+      [title]="item.name + ' details'"
+      >{{ item.name }}</a
+    >
+  </h3>
+
+  <p *ngIf="item.description">Description: {{ item.description }}</p>
+  
+  <p *ngIf="item.price">Price: {{ item.price }}</p>
+
+</div>
